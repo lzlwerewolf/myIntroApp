@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <style>
+    	body{
+    		background: url(images/background.jpg) -150px top;
+    		font-family: "微软雅黑";
+    	}
+    	.l{
+    		float: left;
+    	}
+    	.clear{
+    		width: 90%;
+    		margin: 0 auto 20px;
+    		background: #fff;
+    		border-radius: 10px;
+    	}
+    	.clear:after{
+    		content:"";
+    		clear: both;
+    		display: block;
+    	}
+    	.clear img{
+    		width: 80px;
+    		margin: 12px 12px 0;
+    	}
+    	.clear p{
+    		width: 210px;
+    		margin: 0;
+    		padding-left: 10px;
+    	}
+    	.js{
+    		line-height: 23px;
+    	}
+    	.js img{
+    		margin-top: 6px;
+    	}
+    	.title{
+    		color: #fff;
+    		font-weight: bold;
+    		font-size: 20px;
+    		text-align:center ;
+    		width: 118px;
+    		height: 48px;
+    		line-height: 48px;
+    		border: 1px dashed #fff;
+    		margin: 30px auto 10px;
+    	}
+    	.notice{
+    		font-family: arial;
+    		color: #fff;
+    		text-align: center;
+    		margin: 0 auto 20px;
+    	}
+    	.tools img{
+    		border-radius: 25px;
+    		display: block;
+    		margin-top: 80px;
+    	}
+    	.tools img:nth-child(1){
+    		margin-left: 240px;
+    	}
+    	.tools img:nth-child(2){
+    		margin-left: 40px;
+    	}
+    	.tools img:nth-child(3){
+    		margin-left: 240px;
+    	}
+    	.tools img:nth-child(4){
+    		margin-left: 40px;
+    	}
+    	.tools img:nth-child(5){
+    		margin-left: 240px;
+    	}
+    	.tools img:nth-child(6){
+    		margin-left: 40px;
+    	}
+    	.tools img:nth-child(7){
+    		margin-left: 240px;
+    	}
+    	.tools img:nth-child(8){
+    		margin-left: 40px;
+    	}
+    	@-webkit-keyframes cliImg{
+    		0%{
+    			-webkit-transform: rotate(0) scale(1);
+    		}
+    		25%{
+    			-webkit-transform: rotate(30deg) scale(1.1);
+    		}
+    		50%{
+    			-webkit-transform: rotate(-30deg) scale(1.1);
+    		}
+    		75%{
+    			-webkit-transform: rotate(0deg) scale(0.9);
+    		}
+    		100%{
+    			-webkit-transform: rotate(0deg) scale(1);
+    		}
+    	}
+    </style>
+</head>
+<body>
+<div class="mui-scroll-wrapper">
+	<div class="mui-scroll" style="height: 2000px;">
+		 <header class="title">专业技能</header>
+		 <header class="notice">Skills</header>
+		 <div class="html5 clear">
+		 	<img src="images/html5_logo.png" alt="html5" class="l"/>
+		 	<p class="l">熟悉HTML5,运用HTML+CSS搭建网页，深刻理解Web标准和标签语义化,熟悉html5新特性<br />熟练运用Webstorm、IntelliJ IDEA等编译器和Chrome、FF、IE等浏览器进行代码设计与调试</p>
+		 </div>
+		 <div class="css3 clear">
+		 	<p class="l">能熟练运用CSS对网页进行设计，并适当运用CSS3使页面在现代浏览器上更好地呈现。<br />熟悉并能使用Less、Sass等预编译工具来提高CSS代码的模块化程度与编写效率。</p>
+		 	<img src="images/logo-css3-vector.png" alt="html5" class="l"/>
+		 </div>
+		 <div class="js clear">
+		 	<p class="l">掌握原生JS，也能熟练运用JQuery等框架来编写代码。<br />对JavaScript面向对象编程思想有一定的了解和编程经验。</p>
+		 	<img src="images/javascript.png" alt="html5" class="l"/>
+		 </div>
+		 <section class="title">框架及工具</section>
+		 <section class="notice">Frameworks and Tools</section>
+		 <div class="tools">
+		 	<img src="images/angular.png" alt="angularjs" data="能使用angular.js框架开发采用MVC架构的项目"/>
+		 	<img src="images/bootstrap-logo.png" alt="bootstrap" data="熟悉bootstrap十二栅格化系统原理及各种组件用法,并能使用less封装简单的十二栅格化"/>
+		 	<img src="images/ionic.jpg" alt="ionic" data="能使用ionic框架配合angular.js开发webApp和HybridApp"/>
+		 	<img src="images/mui.png" alt="mui" data="能使用HBuilder的mui框架开发webApp并打包成类似原生App"/>
+		 	<img src="images/nodejs.jpg" alt="nodejs" data="了解nodejs以及其下的bower等组件的基本使用方法"/>
+		 	<img src="images/gulp.jpg" alt="gulp" data="可以使用gulp来进行代码的压缩以及管理"/>
+		 	<img src="images/github.png" alt="github" data="能通过git协同团队的代码管理工作"/>
+		 	<img src="images/cordova.png" alt="cordova" data="能使用cordova框架开发更接近于原生app的混合应用"/>
+		 </div>
+	</div>
+</div>
+</body>
+<script src="js/mui.min.js"></script>
+<script src="js/jquery-1.11.2.js"></script>
+<script type="text/javascript">
+var scroll1 = mui('.mui-scroll-wrapper').scroll({
+	 scrollY: true, //是否竖向滚动
+	 scrollX: false, //是否横向滚动
+	 startX: 0, //初始化时滚动至x
+	 startY: 0, //初始化时滚动至y
+	 deceleration:0.0006, //阻尼系数,系数越小滑动越灵敏
+	 bounce: true//是否启用回弹
+});
+$(".tools img").click(function(){
+	var t = $(this);
+	var tt = this;
+	t.css("-webkit-animation","cliImg 1s")
+	flip(tt)
+	setTimeout(function(){
+		t.css({
+			animation:""
+		})
+	},1000)
+})
+function flip(ele){
+	var top = ele.offsetTop;
+	var left = ele.offsetLeft;
+	left==40?left=140:left=40;
+	$("<div></div>").text(ele.getAttribute("data")).css({
+		position:"absolute",
+		top:top,
+		left:left,
+		width:200,
+		lineHeight:"20px",
+		color:"#fff"
+	}).appendTo(".tools").addClass("animated fadeIn")
+}
+//jq类库,angular框架,mui框架,ionic框架,bootstrap框架,
+</script>
+</html>

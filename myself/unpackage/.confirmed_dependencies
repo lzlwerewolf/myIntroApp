@@ -1,0 +1,76 @@
+{
+	"index.html": {
+		"resources": [
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"first.html",
+			"css/mui.min.css"
+		],
+		"refer": [
+			"sec.html",
+			"first.html",
+			"third.html",
+			"fourth.html"
+		]
+	},
+	"sec.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css"
+		]
+	},
+	"first.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"css/jquery-1.11.2.js",
+			"css/swiper-3.3.1.min.js",
+			"css/animate.min.css",
+			"css/swiper.css",
+			"js/swiper-3.3.1.min.js",
+			"js/jquery-1.11.2.js",
+			"images/11.jpg",
+			"images/title.png",
+			"images/name.png",
+			"images/smoke--translucent--isolated_19-115481.jpg",
+			"images/91858PICim6_1024.jpg",
+			"images/background.jpg",
+			"images/wolf.png",
+			"css/swipebox.min.css",
+			"js/jquery.swipebox.min.js",
+			"images/zxiu.png",
+			"images/handu.png",
+			"img/loader.gif",
+			"img/icons.svg",
+			"img/icons.png"
+		]
+	},
+	"third.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"images/91858PICim6_1024.jpg",
+			"images/logo-css3-vector.png",
+			"images/html5_logo.png",
+			"images/angular.png",
+			"images/mui.png",
+			"images/ionic.jpg",
+			"css/animate.min.css",
+			"images/nodejs.jpg",
+			"images/github.png",
+			"js/jquery-1.11.2.js",
+			"images/cordova.png",
+			"images/bootstrap-logo.png",
+			"images/background.jpg",
+			"images/gulp.jpg",
+			"images/javascript.png"
+		]
+	},
+	"fourth.html": {
+		"resources": [
+			"css/animate.min.css",
+			"js/mui.min.js",
+			"css/mui.min.css"
+		]
+	}
+}

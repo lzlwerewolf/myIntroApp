@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<title>柳泽林的个人简历</title>
+	<link rel="stylesheet" href="css/swiper.css"/>
+	<link rel="stylesheet" href="css/animate.min.css"/>
+	<link rel="stylesheet" href="css/swipebox.min.css" />
+	<style>
+		body{
+			background: #eee;
+			color: #eee;
+			font-family: "微软雅黑";
+		}
+		.swiper-slide{
+			background: url(images/background.jpg) -150px top;
+			background-size: cover;
+		}
+		.sec1{
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			flex-flow:wrap row;
+		}
+		.sec1 div{
+			width: 100vw
+		}
+		.sec1 div *{
+			display: block;
+			margin: 0 auto;
+			text-align: center;
+		}
+		.sec1 #img img{
+			border-radius: 50%;
+			width: 40vw;
+			animation: img 1.5s linear alternate infinite;
+		}
+		
+		.sec1 .resume img{
+			width: 70vw;
+		}
+		.sec1 .line{
+			display: block;
+			width: 60vw;
+			height: 3px;
+			background: -webkit-linear-gradient(left,rgba(50,50,50,0.1),rgba(255,255,255,1),rgba(50,50,50,0.1));
+		}
+		.sec1 .par1,.sec1 .par2{
+			margin: 40px 0;
+			text-shadow: 3px 3px 3px rgba(255,255,255,0.8);
+		}
+		.sec1 .come{
+			width: 130px;
+			height: 30px;
+			line-height: 30px;
+			color: #333;
+			background: #eee;
+			border-radius: 10px;
+			box-shadow: 0 0 30px rgba(255,255,255,1);
+			position: relative;
+			visibility: hidden;
+		}
+		.sec1 .come span{
+			float: left;
+			width: 0px;
+			height: 0px;
+			border: 6px solid transparent;
+			border-top: 6px solid #000000;
+			position: absolute;
+			top: 8px;
+			left:10px;
+			animation:down 0.8s ease infinite alternate
+		}
+		.sec1 .come .down{
+			left: initial;
+			right: 10px;
+		}
+		@keyframes img{
+			from{box-shadow: 0 0 40px rgba(100,100,200,0.7);}
+			to{box-shadow: 0 0 30px rgba(100,200,100,0.7);}
+		}
+		@keyframes down{
+			from{top:8px}
+			to{top:12px}
+		}
+		
+		.sec2 .myIntro{
+			width: 80%;
+			height: 90%;
+			color: #333;
+			background: rgba(255,255,255,0.9);
+			border: dotted 2px seagreen;
+			border-radius: 15px;
+			margin: 3vh 10vw;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: center;
+			align-content: space-around;
+			opacity: 0;
+			transition: all 1s linear 0s;
+		}
+		.sec2 .myIntro header{
+			font-size: 24px;
+		}
+		.sec2 .myIntro p{
+			width: 80%;
+			height: 26px;
+			line-height: 26px;
+			border: dotted 1px skyblue;
+			border-radius: 10px;
+			text-indent: 10px;
+		}
+		.sec2 .myIntro .name{
+			background: url(images/name.png) no-repeat center;
+			height: 50px;
+			border: 0;
+		}
+		.sec3 header{
+			margin-top:10px;
+			height: 60px;
+			line-height: 60px;
+			font-size: 24px;
+			text-align: center;
+			display: none;
+		}
+		.sec3 p{
+			width: 80%;
+			margin:20px auto;
+			line-height: 1.2em;
+			padding: 15px;
+			border: 1px dotted #0062CC;
+			border-radius: 15px;
+			color: #333;
+			background: rgba(255,255,255,0.7);
+			text-align: center;
+			display: none;
+		}
+		.sec4 header{
+			line-height: 60px;
+			font-size: 24px;
+			text-align: center;
+			display: none;
+		}
+		.sec4 ul{
+			list-style: none;
+		}
+		.sec4 ul img{
+			width: 100px;
+		}
+		#exemple{
+			float: left;
+			width: 50%;
+			display: none;
+		}
+		#intro{
+			float: left;
+			width: 50%;
+			display: none;
+		}
+		#intro p{
+			font-size: 12px;
+			color: #fff;
+		}
+		#intro .p1{
+			line-height: 24px;
+		}
+		#intro .p2{
+			height: 180px;
+			line-height: 30px;
+			margin: 0;
+		}
+		#intro .p3{
+			line-height: 24px;
+			margin: 0;
+		}
+	</style>
+</head>
+
+<body>
+<section class="swiper-container">
+	<section class="swiper-wrapper">
+		<section class="swiper-slide sec1">
+			<div id="img">
+				<img src="images/11.jpg" alt="my头像" />
+			</div>
+			<div class="resume">
+				<img src="images/title.png"/>
+				<span class="line"></span>
+				<p class="par1">应聘 web前端工程师</p>
+				<p class="par2">给我一个机会,还您一份惊喜</p>
+				<p class="come"><span></span>了解一下<span class="down"></span></p>
+			</div>
+		</section>
+		<section class="swiper-slide sec2">
+				<div class="myIntro">
+					<header>个人信息</header>
+					<p class="name"></p>
+					<p>应聘职位：web前端工程师</p>
+					<p>专业:物联网工程</p>
+					<p>年龄：22岁</p>
+					<p>电话：15039069666</p>
+					<p>邮箱：gctdog@163.com</p>
+					<p>学历：本科</p>
+				</div>
+		</section>
+		<section class="swiper-slide sec3">
+			<header>论一个coder的梦想</header>
+			<p>我不是码农<br/>我是改变世界的Coder</p>
+			<p>我是一个对明天充满希望的人，一个有技术追求的coder，把技术作为自己的兴趣来不断修炼自己；我想要去做一个有恒心，有理想的coder，不忘初心。</p>
+			<p>"你正走在你曾日日夜夜渴望走的道路上，你所看的每一本书，每一行代码，都会成为你的力量，内化成你的底蕴，帮助你在脑内构筑体系，继而迸发出卓越的思维闪光，照亮这个黑暗的世界。
+
+				去学习吧，去Coding吧，你所努力做的一切，都会帮助你照亮这个世界。"</p>
+		</section>
+		<section class="swiper-slide sec4">
+			<header>项目展示</header>
+			<div>场地有限...暂不支持详细查看，详细DEMO请移步:lzlwerewolf.duapp.com</div>
+			<section id="exemple" class="container">
+
+				<div class="wrap small-width">
+					<div id="try"></div>
+					<ul id="box-container">
+						<li class="box">
+							<a href="images/handu.png" class="swipebox" title="Fog">
+								<img src="images/handu.png" alt="image">
+							</a>
+						</li>
+						<li class="box">
+							<a href="images/zxiu.png" class="swipebox" title="City">
+								<img src="images/zxiu.png" alt="image">
+							</a>
+						</li>
+						<li class="box">
+							<a href="images/wolf.png" class="swipebox" title="Street">
+								<img src="images/wolf.png" alt="image">
+							</a>
+						</li>
+						<li class="box">
+							<a href="http://swipebox.csag.co/images/image-4.jpg" class="swipebox" title="Mustache Guy">
+								<img src="http://swipebox.csag.co/images/image-4.jpg" alt="image">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section id="intro">
+				<p class="p1">仿韩都衣舍官网，是我闲暇时间所做的，为了练习PC端整站项目，以一个较高的标准完成了它。</p>
+				<p class="p2">zxiu官网，完成这个项目的过程中，我积累了许多移动app开发的经验。</p>
+				<p class="p3">狼人杀桌游，是自己在做的一个小东西。目前还只有卡牌的3d画廊介绍..更多功能，敬请期待</p>
+			</section>
+		</section>
+		
+	</section>
+</section>
+<script src="js/jquery-1.11.2.js"></script>
+<script src="js/swiper-3.3.1.min.js"></script>
+<script src="js/jquery.swipebox.min.js"></script>
+<script>
+$(function(){
+	$(".swipebox").swipebox();
+    var swiperArr = document.getElementsByClassName("swiper-slide");
+    var mySwiper = new Swiper('.swiper-container', {
+        direction : 'vertical',
+        shortSwipes : true,
+        onSlideChangeEnd:function(){
+            animation($(".swiper-slide-active").index())
+        }
+    })
+})
+//第一段动画
+$(function(){
+    animation(0)
+})
+function animation(page){
+	console.log(page)
+    switch(page){
+        case(0):{
+            //第一页,一左一右关门
+            $("#img").addClass("animated bounceInLeft").css({
+                display:"block"
+            });
+            $(".resume img").addClass("animated bounceInRight").css({
+                display:"block"
+            });
+            $(".resume .line").addClass("animated bounceInLeft").css({
+                display:"block"
+            });
+            $(".resume .par1").addClass("animated bounceInRight").css({
+                display:"block"
+            });
+            $(".resume .par2").addClass("animated bounceInLeft").css({
+                display:"block"
+            });
+            setTimeout(function(){
+            $(".resume .come").addClass("animated fadeIn").css({
+                visibility:"visible"
+            });},1000)
+            break;
+        }
+        case (1):{
+        	$(".sec2 .myIntro").css({
+        		opacity:1
+        	})
+        	break;
+        }
+        case (2):{
+        	$(".sec3 header").css({
+        		display:"block"
+        	}).addClass("animated bounceInUp");
+        	setTimeout(function(){$(".sec3 p").css({
+        		display:"block"
+        	}).addClass("animated bounceInUp");},700)
+        	break;
+        }
+        case (3):{
+        	$(".sec4 header").css({
+        		display:"block"
+        	}).addClass("animated bounceInUp");
+        	setTimeout(function(){
+        		$(".sec4 #exemple").addClass("animated fadeIn").css({
+        			display:"block"
+        		});
+        		$(".sec4 #intro").addClass("animated fadein").css({
+        			display:"block"
+        		});
+        	},700)
+        	break;
+        }
+    }
+}
+</script>
+</body>
+</html>
